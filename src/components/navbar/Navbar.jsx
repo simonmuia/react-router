@@ -2,6 +2,7 @@ import React, { useCallback, useState} from 'react';
 
 import './navbar.css';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -24,8 +25,8 @@ const expandMenuHandler = useCallback(
         <img src="./images/logo512.png" alt="logo" />
       </div>
 	 <div className={ isMenuExpanded ? "navlinks expanded" : "navlinks"}>
-        <p className="navlink">About</p>
-        <p className="navlink">Contact Us</p>
+        <Link className='navlink' to='/about'>About</Link>
+        <Link className="navlink" to='/contact'>Contact Us</Link>
       </div>
       <div className="mobile-menu">
         <div className="hamburger-wrapper" onClick={expandMenuHandler}>

@@ -10,7 +10,9 @@ navbar{
 	justify-content:space-between;
 	align-items:center;
 	z-index:5;
+	
 }
+
 .navlinks{
 	display:flex;
 	justify-content:center;
@@ -26,6 +28,8 @@ navbar{
 	justify-content:center;
 	transition:all 450ms;
 	border-bottom:2px solid transparent;
+	text-decoration:none;
+	color:#000;
 }
 .navlink:hover{
 	border-bottom: 2px solid #61DAFB;
