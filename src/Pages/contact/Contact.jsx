@@ -1,11 +1,13 @@
 import React from 'react';
 import { AiFillPhone, AiOutlineMail } from 'react-icons/ai';
 import './contact.css';
+import SectionHeader from '../../components/SectionHeader';
 
 const Contact = () => {
   return (
     <div className='contact-container'>
-      <div className='header'> <h1>Contact Us</h1></div>
+      <SectionHeader headerTitle='Contact Us'/>
+      <div className='address-container'> 
       <address>
         <h3>Simon Muia</h3>
         <p>
@@ -17,6 +19,7 @@ const Contact = () => {
           myemail@email.com
         </p>
       </address>
+      </div>
     </div>
   );
 };

@@ -21,9 +21,9 @@ const expandMenuHandler = useCallback(
 
   return (
     <navbar>
-      <div className='brand'>
+      <Link className='brand' to='/'>
         <img src="./images/logo512.png" alt="logo" />
-      </div>
+      </Link>
 	 <div className={ isMenuExpanded ? "navlinks expanded" : "navlinks"}>
         <Link className='navlink' to='/about'>About</Link>
         <Link className="navlink" to='/contact'>Contact Us</Link>

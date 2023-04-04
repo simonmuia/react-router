@@ -1,7 +1,10 @@
-.about{
-	min-height:100vh;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	flex-direction:column;
+.about {
+  min-height: 100vh;
+  display: block;
+  text-align: center;
+  padding-top: 4rem;
+}
+.description {
+  display: flex;
+  justify-content: center;
 }

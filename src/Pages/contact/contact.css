@@ -1,24 +1,26 @@
 .contact-container {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 4rem;
-  align-items: center;
-  gap: 2rem;
+  display:block;
+  padding-top:4rem;
+  text-align: center;
 }
 
-.header{
-	padding:2rem;
-	background-color:#e1e0d3;
-	width:93%;
+.address-container{
+  display:flex;
+  justify-content:center;
+  margin-top:5rem;
 }
 
 address {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding:2rem 4rem;
+  border-radius:10px;
+  box-shadow: 2px 1px #e3f0e2;
+  border:1px solid #e3f0e2;
   justify-items: center;
+  background: rgba(225, 224, 211, 0.2)
 }
 
 address h3{

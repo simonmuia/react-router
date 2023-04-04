@@ -2,9 +2,12 @@ import React from 'react'
 import './sectionheader.css'
 
 
-const SectionHeader = () => {
+const SectionHeader = ({headerTitle}) => {
   return (
-	<div>SectionHeader</div>
+    <div className='header'> 
+    <h1>
+    {headerTitle}
+      </h1></div>
   )
 }
 
