@@ -26,6 +26,7 @@ const expandMenuHandler = useCallback(
       </Link>
 	 <div className={ isMenuExpanded ? "navlinks expanded" : "navlinks"}>
         <Link className='navlink' to='/about'>About</Link>
+        <Link className='navlink' to='/blog'>Our Blog</Link>
         <Link className="navlink" to='/contact'>Contact Us</Link>
       </div>
       <div className="mobile-menu">

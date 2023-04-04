@@ -1,0 +1,26 @@
+.post-wrapper img{
+	width:300px;
+	height:auto;
+	border-radius:5px;
+}
+
+.post-wrapper{
+	min-width:50%;
+	background:rgba(1, 51, 46, 0.1);
+	padding:2rem 5rem;
+	border-radius:5px;
+	transition:all 200ms;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	gap:2rem;
+	user-select:none;
+	cursor:pointer;
+
+}
+.post-wrapper:hover{
+	background:rgba(1, 51, 46, 0.2);
+}
+.post-content{
+	width:max-content;
+}

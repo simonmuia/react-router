@@ -1,0 +1,17 @@
+.posts-componentWrapper{
+	display:flex;
+	flex-direction:column;
+	gap:3rem;
+	justify-content:center;
+	align-items:center;
+}
+
+.posts-componentWrapper{
+	margin-top:4rem;
+	padding:3rem 2rem;
+}
+.all-posts{
+	display:flex;
+	flex-direction:column;
+	gap:2rem;
+}

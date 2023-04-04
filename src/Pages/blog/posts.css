@@ -1,0 +1,6 @@
+.posts-container{
+	min-height:100vh;
+	display:block;
+	margin-top:4rem;
+	text-align: center;
+}
