@@ -1,0 +1,32 @@
+.contact-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 4rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header{
+	padding:2rem;
+	background-color:#e1e0d3;
+	width:93%;
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+}
+
+address h3{
+	align-self:center;
+}
+
+address p {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
