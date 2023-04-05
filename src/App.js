@@ -18,10 +18,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path='about' element={<About/>}/>
           <Route path='contact' element={<Contact/>}/>
-          <Route path='blog' element={<Posts/>}/>
           {/* <Route path='blog/:id' element={<Post/>}/> */}
           {/* nested routes */}
           <Route path='/blog'>
+            <Route index element={<Posts/>} />
             <Route path=':id' element={<Post/>}/>
             </Route>
           <Route path="*" element={<NotFound/>}/>

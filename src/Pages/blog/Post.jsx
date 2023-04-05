@@ -11,6 +11,10 @@ const Post = ({ posts, match }) => {
   useEffect(() => {
     const postId = parseInt(id);
     const selectedPost = PostsList.find((post) => post.id === postId);
+    // if id passed on url is not found
+    if (!selectedPost){
+      window.location.href = '/notfound';
+    }
     setPost(selectedPost);
   }, [id]);
 
