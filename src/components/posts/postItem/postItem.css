@@ -21,12 +21,10 @@
 .post-wrapper:hover{
 	background:rgba(1, 51, 46, 0.2);
 }
-.post-content{
-	width:max-content;
-}
 
-@media only screen and (max-width:450px){
+@media only screen and (max-width:500px){
 	.post-wrapper{
 		flex-direction:column;
+		max-width:200px;
 	}
 }
