@@ -6,6 +6,7 @@ import About from './Pages/about/About';
 import Contact from './Pages/contact/Contact';
 import Navbar from './components/navbar/Navbar';
 import Posts from './Pages/blog/Posts';
+import Post from './Pages/blog/Post';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='about' element={<About/>}/>
           <Route path='contact' element={<Contact/>}/>
           <Route path='blog' element={<Posts/>}/>
+          <Route path='blog/:id' element={<Post/>}/>
         </Routes>
         <Footer />
       </div>

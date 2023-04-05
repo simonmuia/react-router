@@ -15,6 +15,7 @@ const Posts = () => {
        thumbnail={post.thumbnail}
        createdAt={post.createdAt}
        author={post.author}
+       id={post.id}
      /> : ''
       ))} 
       </div>
@@ -22,6 +23,7 @@ const Posts = () => {
         <h1>Our Latest News</h1>
         {PostsList.map(post => (
           <PostItem
+          id={post.id}
           title={post.title}
           summary={post.summary}
           thumbnail={post.thumbnail}

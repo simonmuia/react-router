@@ -1,5 +1,6 @@
 export const PostsList = [
   {
+    id: 1,
     title: 'My First Post',
     thumbnail:
       'https://exchange4media.gumlet.io/news-photo/94064-firstpostmain.jpg?format=webp&w=700&dpr=1.0',
@@ -13,6 +14,7 @@ export const PostsList = [
     author: 'Simon Muia',
   },
   {
+    id:2,
     title: 'React Components are Awesome',
     thumbnail:
       'https://s3.ap-southeast-1.amazonaws.com/arrowhitech.com/wp-content/uploads/2021/09/01031030/ReactJS.png',
@@ -26,6 +28,7 @@ export const PostsList = [
     author: 'Media team',
   },
   {
+    id: 3,
     title: 'Great Benefit of ReactJS',
     thumbnail:
       'https://solguruz.com/wp-content/uploads/2022/09/Top-10-ReactJs-Benefits.png',
