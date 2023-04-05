@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useRef, useState} from 'react';
 
 import './navbar.css';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -40,9 +40,9 @@ useEffect(() => {
         <img src="./images/logo512.png" alt="logo" />
       </Link>
 	 <div ref={menuRef} className={ isMenuExpanded ? "navlinks expanded" : "navlinks"}>
-        <Link className='navlink' to='/about'>About</Link>
-        <Link className='navlink' to='/blog'>Our Blog</Link>
-        <Link className="navlink" to='/contact'>Contact Us</Link>
+        <NavLink className='navlink' to='/about'>About</NavLink>
+        <NavLink className='navlink' to='/blog'>Our Blog</NavLink>
+        <NavLink className="navlink" to='/contact'>Contact Us</NavLink>
       </div>
       <div className="mobile-menu">
         <div className="hamburger-wrapper" onClick={expandMenuHandler}>

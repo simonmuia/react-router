@@ -36,6 +36,10 @@ navbar{
 	color:#3093B3;
 }
 
+.active{
+	border-bottom: 2px solid #61DAFB;
+	color:#3093B3;
+}
 .mobile-menu{
 	display:none;
 }
