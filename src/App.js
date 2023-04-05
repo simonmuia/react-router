@@ -7,6 +7,7 @@ import Contact from './Pages/contact/Contact';
 import Navbar from './components/navbar/Navbar';
 import Posts from './Pages/blog/Posts';
 import Post from './Pages/blog/Post';
+import NotFound from './Pages/notfound/NotFound';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='contact' element={<Contact/>}/>
           <Route path='blog' element={<Posts/>}/>
           <Route path='blog/:id' element={<Post/>}/>
+          <Route path="*" element={<NotFound/>}/>
         </Routes>
         <Footer />
       </div>
