@@ -1,8 +1,14 @@
 import React from 'react'
+import './notfound.css'
+import {GiSpaceSuit} from 'react-icons/gi';
 
 const NotFound = () => {
   return (
-	<div>NotFound</div>
+	<div className='page-wrapper'>
+		<GiSpaceSuit className='icon'/>
+		<h2>404</h2>
+		<p><strong>Uh Oh!</strong> You Seem Lost</p>
+	</div>
   )
 }
 
