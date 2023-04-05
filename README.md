@@ -6,16 +6,31 @@
 
 1. Basics of React Router DOM
 2. Router Components:
-   a. BrowserRouter - A `<BrowserRouter>` stores the current location in the browser's address bar using clean URLs and navigates using the browser's built-in history stack.
-   b. HashRouter - `<HashRouter>` is for use in web browsers when the URL should not (or cannot) be sent to the server for some reason.
-   c. MemoryRouter - A `<MemoryRouter>` stores its locations internally in an array. Unlike `<BrowserHistory>` and `<HashHistory>`, it isn't tied to an external source, like the history stack in a browser. This makes it ideal for scenarios where you need complete control over the history stack, like testing.
-   d. NativeRouter - `<NativeRouter>` is the recommended interface for running React Router in a React Native app.
+    a. BrowserRouter - A `<BrowserRouter>` stores the current location in the browser's address bar using clean URLs and navigates using the browser's built-in history stack.
+    b. HashRouter - `<HashRouter>` is for use in web browsers when the URL should not (or cannot) be sent to the server for some reason.
+    c. MemoryRouter - A `<MemoryRouter>` stores its locations internally in an array. Unlike `<BrowserHistory>` and `<HashHistory>`, it isn't tied to an external source, like the history stack in a browser. This makes it ideal for scenarios where you need complete control over the history stack, like testing.
+    d. NativeRouter - `<NativeRouter>` is the recommended interface for running React Router in a React Native app.
 
-   e. Router - `<Router>` is the low-level interface that is shared by all router components (like `<BrowserRouter>` and `<StaticRouter>`). In terms of React, `<Router>` is a context provider that supplies routing information to the rest of the app.
+    e. Router - `<Router>` is the low-level interface that is shared by all router components (like `<BrowserRouter>` and `<StaticRouter>`). In terms of React, `<Router>` is a context provider that supplies routing information to the rest of the app.
 
-   f. StaticRouter - `<StaticRouter>` is used to render a React Router web app in node. Provide the current location via the location prop.
+    f. StaticRouter - `<StaticRouter>` is used to render a React Router web app in node. Provide the current location via the location prop.
 
-3. Nested Routes - 
+3. Nested Routes
+
+4. Hooks:
+    a. `useSearchParams` - The useSearchParams hook is used to read and modify the query string in the URL for the current location. Like React's own `useState` hook, useSearchParams returns an array of two values: the current location's search params and a function that may be used to update them.
+
+    b. `useParams`- The useParams hook returns an object of key/value pairs of the dynamic params from the current URL that were matched by the `<Route path>`. Child routes inherit all params from their parent routes.
+
+    c. `useNavigation` - This hook tells you everything you need to know about a page navigation to build pending navigation indicators and optimistic UI on data mutations. Things like:
+
+           - Global loading indicators
+           - Disabling forms while a mutation is happening
+           - Adding busy indicators to submit buttons
+           - Optimistically showing a new record while it's being created on the server
+           - Optimistically showing the new state of a record while it's being updated
+
+    d. `useOutlet` - Returns the element for the child route at this level of the route hierarchy. This hook is used internally by `<Outlet>` to render child routes.
 
 ## Available Scripts
 
