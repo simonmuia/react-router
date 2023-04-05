@@ -15,6 +15,8 @@
 
    f. StaticRouter - `<StaticRouter>` is used to render a React Router web app in node. Provide the current location via the location prop.
 
+3. Nested Routes - 
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -1,22 +1,28 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import SectionHeader from '../../components/SectionHeader';
 import { PostsList } from '../../utils/PostsConstants';
-import './post.css'
+import './post.css';
 
-const Post = ({ posts, match }) => {
+const Post = () => {
   const { id } = useParams();
   const [post, setPost] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const postId = parseInt(id);
     const selectedPost = PostsList.find((post) => post.id === postId);
     // if id passed on url is not found
     if (!selectedPost){
-      window.location.href = '/notfound';
+    setTimeout(()=>{
+      navigate(-1);
+    },1000)
+    navigate('/notfound')
     }
+    
     setPost(selectedPost);
-  }, [id]);
+   
+  }, [navigate, id]);
 
   return (
     <div className="post-detail-wrapper">
