@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import './postItem.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const PostItem = ({id,title, thumbnail, summary, createdAt, author}) => {
+  const navigate = useNavigate();
+
+  const itemClickHandler = useCallback(
+    () => {
+      navigate(`/blog/${id}`)
+    },
+    [navigate, id],
+  )
+  
   return (
-	<div className='post-wrapper'>
+	<div onClick={itemClickHandler} className='post-wrapper'>
     <img src={thumbnail} alt='thumbnail'/>
    
     <div className='post-content'>
