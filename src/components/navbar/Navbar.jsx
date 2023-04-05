@@ -1,4 +1,4 @@
-import React, { useCallback, useState} from 'react';
+import React, { useCallback, useEffect, useRef, useState} from 'react';
 
 import './navbar.css';
 import { RxHamburgerMenu } from 'react-icons/rx';
@@ -14,7 +14,22 @@ const expandMenuHandler = useCallback(
   },
   [isMenuExpanded],
 )
+const menuRef = useRef(null);
 
+// listen on clicking outside
+useEffect(() => {
+  const handleOutsideClick = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsMenuExpanded(false);
+    }
+  };
+
+  document.addEventListener('mousedown', handleOutsideClick);
+
+  return () => {
+    document.removeEventListener('mousedown', handleOutsideClick);
+  };
+}, [menuRef]);
 
 
 
@@ -24,7 +39,7 @@ const expandMenuHandler = useCallback(
       <Link className='brand' to='/'>
         <img src="./images/logo512.png" alt="logo" />
       </Link>
-	 <div className={ isMenuExpanded ? "navlinks expanded" : "navlinks"}>
+	 <div ref={menuRef} className={ isMenuExpanded ? "navlinks expanded" : "navlinks"}>
         <Link className='navlink' to='/about'>About</Link>
         <Link className='navlink' to='/blog'>Our Blog</Link>
         <Link className="navlink" to='/contact'>Contact Us</Link>

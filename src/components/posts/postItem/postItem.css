@@ -24,3 +24,9 @@
 .post-content{
 	width:max-content;
 }
+
+@media only screen and (max-width:450px){
+	.post-wrapper{
+		flex-direction:column;
+	}
+}

@@ -21,7 +21,6 @@ const Post = ({ posts, match }) => {
         <>
           <SectionHeader headerTitle={post.title} />
           <div className="post-content">
-            <div className='post-content'>
               <img src={post.thumbnail} alt='post'/>
               <div className='post-description'>
                 <p>{post.description}</p>
@@ -29,7 +28,6 @@ const Post = ({ posts, match }) => {
                  <em><strong> <small>Published on {post.createdAt} by {post.author}</small></strong></em>
                 </div>
               </div>
-            </div>
           </div>
         </>
       ) : (
